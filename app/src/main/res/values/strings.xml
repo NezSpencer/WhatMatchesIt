@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Shape Match Color</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start_page">StartPage</string>
+
+
+
+    <!--
+ Google Play game services IDs.
+ Save this file as res/values/games-ids.xml in your project.
+ -->
+
+        <string name="app_id">167836015549</string>
+        <string name="board_id">CgkIvbe5nvEEEAIQAA</string>
+        <string name="achievement_triangulator">CgkIvbe5nvEEEAIQAQ</string>
+        <string name="achievement_circulator">CgkIvbe5nvEEEAIQAg</string>
+        <string name="achievement_fair_and_square">CgkIvbe5nvEEEAIQAw</string>
+        <string name="achievement_squared">CgkIvbe5nvEEEAIQBA</string>
+        <string name="achievement_jump_by_3">CgkIvbe5nvEEEAIQBQ</string>
+        <string name="achievement_5_prime">CgkIvbe5nvEEEAIQBg</string>
+        <string name="leaderboard_sharpest_eyes">CgkIvbe5nvEEEAIQAA</string>
+        <string name="event_match_30_colors">CgkIvbe5nvEEEAIQBw</string>
+
+</resources>

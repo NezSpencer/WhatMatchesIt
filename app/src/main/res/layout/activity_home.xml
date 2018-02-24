@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:background="#263238"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".Home">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+<RelativeLayout
+    android:id="@+id/score_layout"
+    android:layout_below="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:background="#263238"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/score_label"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="Score\n0"
+        android:background="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#76FF03"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/high_label"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="BEST\n0"
+        android:background="#000000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#76FF03"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:src="@drawable/red_circl"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/score_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+
+
+        >
+
+
+        <ImageView
+            android:id="@+id/big_image"
+            android:layout_width="wrap_content"
+            android:src="@drawable/yellow_square"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/yes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes"
+                android:textSize="30sp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="bottom"
+                android:background="@drawable/start"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/no_button"
+                android:layout_width="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textSize="30sp"
+                android:textColor="#DD2C00"
+                android:background="@drawable/start"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
